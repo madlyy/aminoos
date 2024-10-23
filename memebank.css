@@ -103,9 +103,45 @@
     height: auto;
     overflow-clip-margin: content-box;
 }
-  /* Responsive */
-  @media (max-width: 768px) {
-    .carousel-item {
-      min-width: 150px;
-    }
+    /* Responsive */
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 90%;
+      margin: 10px auto;
   }
+
+  .slide {
+      height: 250px; 
+  }
+
+  .slide img {
+      height: auto; 
+  }
+
+  video {
+      width: 100%; 
+  }
+
+  .carousel-controls button {
+      padding: 10px; 
+  }
+
+  .believe {
+      font-size: 1.2em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+      width: 100%;
+  }
+
+  h1, h2 {
+      font-size: 1.5em; 
+  }
+
+  .button0, .button1, .button2, .button3, .button4 {
+      font-size: 12px; 
+      padding: 10px 15px;
+  }
+}
